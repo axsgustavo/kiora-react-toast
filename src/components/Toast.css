@@ -1,0 +1,120 @@
+.toast-container {
+  position: fixed;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  pointer-events: none;
+}
+
+.toast-container-top {
+  top: 16px;
+}
+
+.toast-container-bottom {
+  bottom: 16px;
+}
+
+.toast-container-left {
+  left: 16px;
+}
+
+.toast-container-right {
+  right: 16px;
+}
+
+.toast-container-center {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.toast-item {
+  min-width: 300px;
+  max-width: 500px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid black;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  color: black;
+  line-height: 1.5;
+  font-size: 14px;
+  font-family: system-ui, -apple-system, sans-serif;
+  position: relative;
+  overflow: hidden;
+  pointer-events: all;
+  cursor: pointer;
+  animation: slideIn 0.3s ease-out;
+}
+
+.toast-item:hover {
+  opacity: 0.9;
+}
+
+.toast-item:focus {
+  outline: 2px solid rgba(0, 0, 0, 0.5);
+  outline-offset: 2px;
+}
+
+@keyframes slideInTop {
+  from {
+    opacity: 0;
+    transform: translateY(-16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.toast-item-top {
+  animation: slideInTop 0.3s ease-out;
+}
+
+.toast-item-bottom {
+  animation: slideInBottom 0.3s ease-out;
+}
+
+.toast-timebar {
+  height: 3px;
+  background: rgba(0, 0, 0, 0.25);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform-origin: left;
+  animation: shrinkTimebar linear forwards;
+}
+
+@keyframes shrinkTimebar {
+  from {
+    transform: scaleX(1);
+  }
+  to {
+    transform: scaleX(0);
+  }
+}
+
+.toast-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.toast-message {
+  flex: 1;
+  word-break: break-word;
+}

@@ -1,0 +1,24 @@
+src/
+node_modules/
+.vscode/
+.idea/
+*.log
+*.local
+.env
+.env.*
+!.env.example
+
+# Dev files
+index.html
+vite.config.ts
+tsconfig*.json
+eslint.config.js
+
+# Test files
+**/*.test.ts
+**/*.test.tsx
+**/*.spec.ts
+**/*.spec.tsx
+
+# Build artifacts
+dist-ssr/
