@@ -360,7 +360,7 @@ function PositionSelector() {
       }}
     >
       <header style={{ marginBottom: "2rem" }}>
-        <h1 style={{ margin: 0 }}>@kiora/react-toast Demo</h1>
+        <h1 style={{ margin: 0 }}>@kiorabr/react-toast Demo</h1>
         <p style={{ color: "#6c757d", margin: 0 }}>
           Test all toast types and configurations
         </p>

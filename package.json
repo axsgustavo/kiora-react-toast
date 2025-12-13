@@ -1,5 +1,5 @@
 {
-  "name": "@kiora/react-toast",
+  "name": "@kiorabr/react-toast",
   "version": "1.0.0",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -58,10 +58,10 @@
     "message",
     "kiora"
   ],
-  "description": "A lightweight and optimized React toast notification library",
+  "description": "A lightweight, accessible React toast notification library with TypeScript support. Features customizable positioning, durations, animations, and full ARIA compliance. Zero dependencies.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kiora/react-toast"
+    "url": "https://github.com/axsgustavo/kiora-react-toast"
   },
   "license": "MIT"
 }

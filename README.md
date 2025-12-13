@@ -1,4 +1,4 @@
-# @kiora/react-toast
+# @kiorabr/react-toast
 
 A lightweight and optimized React toast notification library with TypeScript support.
 
@@ -18,11 +18,11 @@ A lightweight and optimized React toast notification library with TypeScript sup
 ## Installation
 
 ```bash
-npm install @kiora/react-toast
+npm install @kiorabr/react-toast
 # or
-yarn add @kiora/react-toast
+yarn add @kiorabr/react-toast
 # or
-pnpm add @kiora/react-toast
+pnpm add @kiorabr/react-toast
 ```
 
 ## Usage
@@ -32,13 +32,13 @@ pnpm add @kiora/react-toast
 In your main application file or layout:
 
 ```tsx
-import "@kiora/react-toast/style.css";
+import "@kiorabr/react-toast/style.css";
 ```
 
 ### 2. Wrap your app with ToastContextProvider
 
 ```tsx
-import { ToastContextProvider, Toast } from "@kiora/react-toast";
+import { ToastContextProvider, Toast } from "@kiorabr/react-toast";
 
 function App() {
   return (
@@ -59,7 +59,7 @@ function App() {
 ### 3. Use the toast hook in your components
 
 ```tsx
-import { useToastContext } from "@kiora/react-toast";
+import { useToastContext } from "@kiorabr/react-toast";
 
 function MyComponent() {
   const { showToast } = useToastContext();
@@ -181,7 +181,7 @@ import type {
   ToastPositionX,
   ToastPositionY,
   ToastConfig,
-} from "@kiora/react-toast";
+} from "@kiorabr/react-toast";
 ```
 
 ## Browser Support
