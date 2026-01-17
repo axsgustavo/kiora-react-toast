@@ -49,8 +49,8 @@ function App() {
         duration: 3000, // default duration in milliseconds
       }}
     >
-      <Toast />
       {/* Your app components */}
+      <Toast />
     </ToastContextProvider>
   );
 }

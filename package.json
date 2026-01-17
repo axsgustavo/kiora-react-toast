@@ -11,7 +11,7 @@
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
     },
-    "./style.css": "./dist/style.css"
+    "./style.css": "./dist/react-toast.css"
   },
   "files": [
     "dist",
@@ -23,8 +23,8 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
-    "build:lib": "tsc && vite build",
+    "build": "vite build && tsc -p tsconfig.app.json",
+    "build:lib": "vite build && tsc -p tsconfig.app.json",
     "lint": "eslint .",
     "preview": "vite preview",
     "prepublishOnly": "npm run build:lib"
